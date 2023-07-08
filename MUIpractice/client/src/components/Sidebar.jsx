@@ -9,9 +9,9 @@ import Settings from '@mui/icons-material/Settings';
 import AccountBox from '@mui/icons-material/AccountBox';
 import ModeNight from '@mui/icons-material/ModeNight';
 
-const label = { inputProps: { 'aria-label': 'Switch demo' } };
+// const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
-const Sidebar = () => {
+const Sidebar = ({mode,setMode}) => {
   return (
     <Box
       // bgcolor="skyblue"
@@ -81,7 +81,7 @@ const Sidebar = () => {
             <ListItemIcon>
               <ModeNight />
             </ListItemIcon>
-            <Switch {...label} />
+            <Switch  onChange={(e)=>setMode(mode==="light" ? "dark" : "light")}/>
           </ListItemButton>
         </ListItem>
       </List>

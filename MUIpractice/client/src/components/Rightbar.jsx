@@ -16,7 +16,7 @@ const Rightbar = () => {
           <Avatar alt="Agnes Walker" src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <Avatar alt="Trevor Henderson" src="https://images.pexels.com/photos/762527/pexels-photo-762527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
         </AvatarGroup>
-        <Typography variant='h6' fontWeight={100} mt={2} mb={2}>Latest Photos</Typography>
+        <Typography variant='h6' fontWeight={100} mt={2} >Latest Photos</Typography>
         <ImageList cols={3} rowHeight={100} gap={5}>
           <ImageListItem>
             <img
